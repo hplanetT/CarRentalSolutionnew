@@ -12,6 +12,7 @@ namespace Buisness.Validations
     {
         public CarValidator()
         {
+            int a = 4;
             RuleFor(c => c.Brand).NotEmpty().WithMessage("Araç markası boş olamaz.");
             RuleFor(c => c.Model).NotEmpty().WithMessage("Araç modeli boş olamaz.");
             RuleFor(c => c.LicensePlate).Matches(@"^[0-9A-Z]{7,8}$").WithMessage("Plaka formatı hatalı.");

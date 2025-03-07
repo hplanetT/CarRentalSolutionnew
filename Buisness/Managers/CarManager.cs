@@ -41,6 +41,7 @@ namespace Buisness.Managers
         //Yeni araç ekle
         public void AddCar(Car car)
         {
+
             if (car == null)
                 throw new ArgumentNullException(nameof(car), "Araç bilgisi boş olamaz.");
 
